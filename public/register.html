@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Nimblair</title>
+    <title>Регистрация | Nimblair</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="./images/info/zazu.jpeg" alt="nav-logo">
+            </a>
+            <input type="search" id="navsearch" placeholder="Поиск товаров...">
+        </div>
+        <div class="nav-right">
+            <a href="login.html" class="nav-login">Вход</a>
+            <a href="basket.html" class="nav-basket">Корзина</a>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1>Регистрация</h1>
+            
+            <div id="errorMessage" style="display: none;" class="error-message"></div>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="full_name">Полное имя</label>
+                    <input type="text" id="full_name" name="full_name" required placeholder="Иван Иванов">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (777) 123-45-67">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required placeholder="Минимум 6 символов">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm_password">Подтверждение пароля</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required placeholder="Повторите пароль">
+                </div>
+                
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+            
+            <div class="auth-link">
+                Уже есть аккаунт? <a href="login.html">Войти</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <div class="footer-client">
+                <a href="login.html">Вход</a>
+                <a href="">Доставка и оплата</a>
+                <a href="">Как сделать заказ</a>
+                <a href="">Условие возврата</a>
+            </div>
+            <div class="footer-about">
+                <a href="about.html">О компании</a>
+                <a href="">Забота о клиентах</a>
+                <a href="">Товары в кредит</a>
+                <a href="">Подарочные карты</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-socialmedia">
+                <p>Мы в соцсетях</p>
+                <a href="">
+                    <img src="./images/others/instagram.png" alt="instagram">
+                </a>
+                <a href="">
+                    <img src="./images/others/telegram.png" alt="telegram">
+                </a>
+                <a href="">
+                    <img src="./images/others/youtube.png" alt="youtube">
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <p>©АО "Nimblair online" 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/register.js"></script>
 </body>
 </html>

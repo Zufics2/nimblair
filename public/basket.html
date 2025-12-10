@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход | Nimblair</title>
+    <title>Корзина | Nimblair</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,36 +15,20 @@
             <input type="search" id="navsearch" placeholder="Поиск товаров...">
         </div>
         <div class="nav-right">
-            <a href="login.html" class="nav-login">Вход</a>
+            <a href="login.html" class="nav-login" id="navLoginBtn">Вход</a>
             <a href="basket.html" class="nav-basket">Корзина</a>
         </div>
     </nav>
 
-    <div class="auth-container">
-        <div class="auth-box">
-            <h1>Вход в аккаунт</h1>
-            
-            <div id="errorMessage" style="display: none;" class="error-message"></div>
-            
-            <form id="loginForm">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
-                </div>
-                
-                <div class="form-group">
-                    <label for="password">Пароль</label>
-                    <input type="password" id="password" name="password" required placeholder="Введите пароль">
-                </div>
-                
-                <button type="submit" class="submit-btn">Войти</button>
-            </form>
-            
-            <div class="auth-link">
-                Нет аккаунта? <a href="register.html">Зарегистрироваться</a>
-            </div>
+    <main class="basket-main">
+        <div class="basket-header">
+            <h1>Моя корзина</h1>
         </div>
-    </div>
+
+        <div id="cartContent">
+
+        </div>
+    </main>
 
     <footer>
         <div class="footer-left">
@@ -80,6 +64,6 @@
         </div>
     </footer>
 
-    <script src="./js/login.js"></script>
+    <script src="./js/basket.js"></script>
 </body>
 </html>
